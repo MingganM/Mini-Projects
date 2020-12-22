@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%;
+}
+:root{
+    --light: white;
+    --blue: rgb(16, 74, 150);
+}
+.container{
+    width:576px;
+    border-radius:0.3rem;
+    padding:2rem;
+    margin:3rem auto;
+    box-shadow:0.3rem 0.4rem 2rem grey;
+}
+.first{
+    background:var(--blue);
+    color:var(--light);
+}
+.second__heading,.first__heading{
+    padding:2rem;
+    text-align:center;
+    margin:2rem auto;
+    display:block;
+    font-size:3rem;
+}
+.first__input{
+    color:var(--light);
+    background-color: transparent;
+    display: block;
+    width:90%;
+    margin:1rem auto;
+    padding:1rem;
+    font-size:2rem;
+    border:none;
+    border-bottom:2px solid var(--light);
+}
+
+.add,.remove{
+    display:block;
+    width:60%;
+    font-size:2rem;
+    margin:4rem auto 2rem auto;
+    padding:1rem 0;
+    background:transparent;
+    border-radius: 0.3rem;
+    border:1px solid black;
+    cursor:pointer;
+    transition: 0.2s;
+}
+.add{
+    color:var(--light);
+    border:1px solid var(--light);
+}
+.item{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:80%;
+    padding:0 1rem;
+    border-radius: 0.4rem;
+    margin:3rem auto;
+    background:var(--blue);
+}
+.item__title{
+    color:var(--light);
+}
+.delete{
+    font-size:3.5rem;
+    text-decoration: none;
+    color:red;
+    transition: 0.2s;
+}
+.add:hover{
+    background: var(--light);
+    color: var(--blue);
+}
+.remove:hover{
+    background:black;
+    color:var(--light);
+}
+.delete:hover{
+    transform:scale(1.2);
+}
+@media screen and (max-width:43.75em){
+    .container{
+        width:100%;
+    }
+}
+/* info-1 */
+.info-1{
+    font-family:sans-serif;
+    font-weight:200;
+    font-size:2rem;
+    text-align: center;
+    width:fit-content;
+    margin:auto;
+    padding:0.5rem 1rem;
+    display:none;
+}
+.alert{
+    display:block;
+    color:red;
+    border:1px solid red;
+}
+.success{
+    display:block;
+    color:green;
+    border: 1px solid green;
+}
